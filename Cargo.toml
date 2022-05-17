@@ -6,9 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-subxt = { version = "0.17.0" }
+hex = "0.4.3"
+subxt = { version = "0.21.0" }
 tokio = { version = "1.17.0", features = ["full"] }
-frame-support = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.16" }
-sp-io = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.16" }
-sp-trie = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.16" }
-codec = { package = "parity-scale-codec", version = "2.0.0", features = ["derive"] }
+frame-support = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.22" }
+sp-io = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.22" }
+sp-trie = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.22" }
+#sp-trie = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.22" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.22" }
+codec = { package = "parity-scale-codec", version = "3.0.0", features = ["derive"] }
+trie-db = "0.23.1"
